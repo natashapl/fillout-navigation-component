@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍 Navigation Component
 
-## Getting Started
+A flexible, drag-and-drop-enabled navigation UI component built with **React**, **Next.js**, **Tailwind CSS**, and **@dnd-kit**. This component renders a series of "page pills" that:
 
-First, run the development server:
+* Highlight the active page
+* Allow reordering via drag-and-drop (except for locked pages like "Ending")
+* Let users insert new pages between any two existing ones
+* Provide contextual menu hooks for future actions (e.g. rename, duplicate)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* ✅ Keyboard and mouse focus support
+* ✅ Drag-and-drop reordering using `@dnd-kit`
+* ✅ Insert new page between any two others using "+" buttons
+* ✅ Prevent inserting pages after a special `Ending` page
+* ✅ Context menu placeholder with room for custom actions
+* ✅ Modular component structure with reusable prop types
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧱 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+* [React](https://reactjs.org/)
+* [Next.js App Router](https://nextjs.org/docs/app)
+* [Tailwind CSS](https://tailwindcss.com/)
+* [@dnd-kit/core](https://github.com/clauderic/dnd-kit) – Drag and drop logic
+* [uuid](https://www.npmjs.com/package/uuid) – Unique page IDs
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+1. **Clone the repo:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/natashapl/fillout-navigation-component.git
+   cd fillout-navigation-component
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+4. Visit [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+
+---
+
+## 🛡 Known Constraints
+
+* The `"Ending"` page cannot be dragged or reordered.
+* Pages cannot be added after `"Ending"`.
+* The context menu (`⋮`) is a placeholder and can be expanded.
