@@ -1,4 +1,4 @@
-# 🛍 Navigation Component
+# Navigation Component
 
 A flexible, drag-and-drop-enabled navigation UI component built with **React**, **Next.js**, **Tailwind CSS**, and **@dnd-kit**. This component renders a series of "page pills" that:
 
@@ -9,7 +9,7 @@ A flexible, drag-and-drop-enabled navigation UI component built with **React**, 
 
 ---
 
-## ✨ Features
+## Features
 
 * ✅ Keyboard and mouse focus support
 * ✅ Drag-and-drop reordering using `@dnd-kit`
@@ -20,7 +20,7 @@ A flexible, drag-and-drop-enabled navigation UI component built with **React**, 
 
 ---
 
-## 🧱 Tech Stack
+## Tech Stack
 
 * [React](https://reactjs.org/)
 * [Next.js App Router](https://nextjs.org/docs/app)
@@ -30,7 +30,7 @@ A flexible, drag-and-drop-enabled navigation UI component built with **React**, 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repo:**
 
