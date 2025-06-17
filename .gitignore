@@ -17,6 +17,11 @@
 /.next/
 /out/
 
+# Build outputs (this is what you need!)
+dist/
+build/
+components/js
+
 # production
 /build
 

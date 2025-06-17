@@ -1,8 +1,0 @@
-"use strict";
-exports.__esModule = true;
-var Navigation_1 = require("../components/Navigation");
-function Home() {
-    return (React.createElement("main", { className: "min-h-screen flex items-center justify-center bg-gray-50 p-6" },
-        React.createElement(Navigation_1["default"], null)));
-}
-exports["default"] = Home;
