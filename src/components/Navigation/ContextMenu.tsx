@@ -129,26 +129,27 @@ export default function ContextMenu({
       <div className="p-3 text-base/24px font-medium bg-[#fafbfc] border-b border-light-gray">
         Settings
       </div>
-      
-      {menuItems.map((item, index) => (
-        <button
-          key={index}
-          onClick={() => {
-            item.onClick();
-            onClose();
-          }}
-          className={`w-full flex items-center gap-3 px-3 py-[7px] text-sm/16px hover:bg-default-light-gray-bg transition-colors ${item.color}`}
-        >
-          <Image
-            src={item.icon}
-            alt=""
-            width={16}
-            height={16}
-            className="flex-shrink-0"
-          />
-          {item.label}
-        </button>
-      ))}
+      <div className="px-3">
+        {menuItems.map((item, index) => (
+          <button
+            key={index}
+            onClick={() => {
+              item.onClick();
+              onClose();
+            }}
+            className={`w-full flex items-center gap-3 py-[7px] text-sm/16px hover:bg-default-light-gray-bg transition-colors ${item.color} ${item.label === 'Delete' ? 'border-t border-light-gray' : ''}`}
+          >
+            <Image
+              src={item.icon}
+              alt=""
+              width={16}
+              height={16}
+              className="flex-shrink-0"
+            />
+            {item.label}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
